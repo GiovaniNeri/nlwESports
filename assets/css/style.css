@@ -175,3 +175,10 @@ i.insta {
         padding: 1rem;
     }
 }
+@media screen and (max-width:440px) {
+    .streamerList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+}
