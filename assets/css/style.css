@@ -1,0 +1,177 @@
+/* general styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background-color: #000;
+    background-image: linear-gradient(#1f1336, #000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+li {
+    list-style: none;
+}
+.resume {
+    color: #A1A1AA;
+}
+header {
+    animation: fromTop .7s .5s backwards;
+}
+section {
+    animation: fromBottom .7s .3s backwards;
+}
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+/* Header */
+
+.photo {
+    width: 120px;
+    border: 6px solid #404040;
+    border-radius: 50%;
+}
+
+/* Sections */
+/* Games */
+.main .games {
+    background-color: #2A2634;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+    border-radius: 1rem;
+}
+
+.games .title {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.games .resume {
+    margin-top: 0;
+    padding-left: 1rem;
+}
+
+.games .gameList li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* Streamers */
+.main .streamer {
+    background-color: #2A2634;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+    border-radius: 1rem;
+}
+
+.streamer .title {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.streamer .resume {
+    margin-top: 0;
+    padding-left: 1rem;
+}
+
+.streamerList {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.streamerList li {
+    padding: .5rem;
+    
+}
+
+.streamerList li a img {
+    border-radius: 50%;
+    border: 6px solid #404040;
+}
+
+/* Social */
+.main .social {
+    background-color: #2A2634;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+    border-radius: 1rem;
+}
+
+.social .title {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.social .resume {
+    margin-top: 0;
+    padding-left: 1rem;
+}
+
+.socialList {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.socialList li {
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.tt {
+    color: #1DA1F2;
+}
+
+i.insta {
+    color: #F77737;
+}
+
+/* Media Querry */
+
+@media screen and (min-width:768px) {
+    .gameList{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
